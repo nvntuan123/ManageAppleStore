@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageAppleStore_GUI", "ManageAppleStore_GUI\ManageAppleStore_GUI.csproj", "{91F98F47-15F3-4E9A-9114-C8015D4CB587}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageAppleStore_DAO", "ManageAppleStore_DAO\ManageAppleStore_DAO.csproj", "{45EC6D41-CA21-4D42-8BAA-E0FE812747A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageAppleStore_BUS", "ManageAppleStore_BUS\ManageAppleStore_BUS.csproj", "{74464E4D-B736-4E20-A2DB-167020E1BBE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageAppleStore_DTO", "ManageAppleStore_DTO\ManageAppleStore_DTO.csproj", "{23A1F779-66E9-4BF3-AE8E-E46635D13E29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{91F98F47-15F3-4E9A-9114-C8015D4CB587}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91F98F47-15F3-4E9A-9114-C8015D4CB587}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91F98F47-15F3-4E9A-9114-C8015D4CB587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45EC6D41-CA21-4D42-8BAA-E0FE812747A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45EC6D41-CA21-4D42-8BAA-E0FE812747A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45EC6D41-CA21-4D42-8BAA-E0FE812747A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45EC6D41-CA21-4D42-8BAA-E0FE812747A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74464E4D-B736-4E20-A2DB-167020E1BBE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74464E4D-B736-4E20-A2DB-167020E1BBE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74464E4D-B736-4E20-A2DB-167020E1BBE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74464E4D-B736-4E20-A2DB-167020E1BBE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A1F779-66E9-4BF3-AE8E-E46635D13E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A1F779-66E9-4BF3-AE8E-E46635D13E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A1F779-66E9-4BF3-AE8E-E46635D13E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A1F779-66E9-4BF3-AE8E-E46635D13E29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
