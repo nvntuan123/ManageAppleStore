@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraCharts.v20.1.Wizard, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -57,8 +58,22 @@
     <Compile Include="frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util.cs" />
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -90,6 +105,116 @@
       <Project>{23a1f779-66e9-4bf3-ae8e-e46635d13e29}</Project>
       <Name>ManageAppleStore_DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\Back-Ground\back-ground-1.jpg" />
+    <Content Include="Resource\Back-Ground\back-ground-2.jpg" />
+    <Content Include="Resource\Icons\Apple Store.ico" />
+    <Content Include="Resource\Icons\Male_User.ico" />
+    <Content Include="Resource\Img-Control\add_32px.png" />
+    <Content Include="Resource\Img-Control\add_user_32px_2.png" />
+    <Content Include="Resource\Img-Control\add_user_16px.png" />
+    <Content Include="Resource\Img-Control\add_user_32px_1.png" />
+    <Content Include="Resource\Img-Control\add_user_32px.png" />
+    <Content Include="Resource\Img-Control\back_32px.png" />
+    <Content Include="Resource\Img-Control\checked-user-32px.png" />
+    <Content Include="Resource\Img-Control\checkmark-32px.png" />
+    <Content Include="Resource\Img-Control\employees_of_type_100px.png" />
+    <Content Include="Resource\Img-Control\employees_100px.png" />
+    <Content Include="Resource\Img-Control\customer-of-type_100px_1.png" />
+    <Content Include="Resource\Img-Control\disapprove-32px.png" />
+    <Content Include="Resource\Img-Control\edit-32px.png" />
+    <Content Include="Resource\Img-Control\edit-8-32px.png" />
+    <Content Include="Resource\Img-Control\edit-user-32px.png" />
+    <Content Include="Resource\Img-Control\home_100px.png" />
+    <Content Include="Resource\Img-Control\home_100px_3.png" />
+    <Content Include="Resource\Img-Control\info_32px_1.png" />
+    <Content Include="Resource\Img-Control\info-100.png" />
+    <Content Include="Resource\Img-Control\info_100px.png" />
+    <Content Include="Resource\Img-Control\info_100px_1.png" />
+    <Content Include="Resource\Img-Control\info_32px.png" />
+    <Content Include="Resource\Img-Control\info_32px_2.png" />
+    <Content Include="Resource\Img-Control\info_32px_3.png" />
+    <Content Include="Resource\Img-Control\bill_100px.png" />
+    <Content Include="Resource\Img-Control\bill_100px_2.png" />
+    <Content Include="Resource\Img-Control\bill_100px_1.png" />
+    <Content Include="Resource\Img-Control\invoice_history_100px.png" />
+    <Content Include="Resource\Img-Control\khoa item\sell_100px.png" />
+    <Content Include="Resource\Img-Control\khoa item\report_100px.png" />
+    <Content Include="Resource\Img-Control\khoa item\employees-100px.png" />
+    <Content Include="Resource\Img-Control\khoa item\customers_100px.png" />
+    <Content Include="Resource\Img-Control\khoa item\product_of_type.png" />
+    <Content Include="Resource\Img-Control\khoa item\model_100px.png" />
+    <Content Include="Resource\Img-Control\khoa item\employee_of_type_100px.png" />
+    <Content Include="Resource\Img-Control\khoa item\importation_100px.png" />
+    <Content Include="Resource\Img-Control\khoa item\products_100px.png" />
+    <Content Include="Resource\Img-Control\khoa item\employee_info_100px.png" />
+    <Content Include="Resource\Img-Control\login_32px.png" />
+    <Content Include="Resource\Img-Control\male_user_32px.png" />
+    <Content Include="Resource\Img-Control\male_user_32px_1.png" />
+    <Content Include="Resource\Img-Control\menu_32px.png" />
+    <Content Include="Resource\Img-Control\minus_32px.png" />
+    <Content Include="Resource\Img-Control\more_info_100px.png" />
+    <Content Include="Resource\Img-Control\new_product_100px.png" />
+    <Content Include="Resource\Img-Control\new_product_100px_1.png" />
+    <Content Include="Resource\Img-Control\checked_32px.png" />
+    <Content Include="Resource\Img-Control\plus_1_32px.png" />
+    <Content Include="Resource\Img-Control\plus_2_32px.png" />
+    <Content Include="Resource\Img-Control\plus_3_32px.png" />
+    <Content Include="Resource\Img-Control\product-100px.png" />
+    <Content Include="Resource\Img-Control\product_of_type_100px.png" />
+    <Content Include="Resource\Img-Control\product_of_type_100px_1.png" />
+    <Content Include="Resource\Img-Control\product_of_type_100px_2.png" />
+    <Content Include="Resource\Img-Control\purchase-order-100px.png" />
+    <Content Include="Resource\Img-Control\models_100px.png" />
+    <Content Include="Resource\Img-Control\refresh_48px.png" />
+    <Content Include="Resource\Img-Control\refresh\refresh_hover.png" />
+    <Content Include="Resource\Img-Control\refresh\refresh.png" />
+    <Content Include="Resource\Img-Control\remove_user_32px.png" />
+    <Content Include="Resource\Img-Control\report\bill-80px.png" />
+    <Content Include="Resource\Img-Control\report\bill_history_100px.png" />
+    <Content Include="Resource\Img-Control\report\filled_box_80px.png" />
+    <Content Include="Resource\Img-Control\report\hot_badge_100px.png" />
+    <Content Include="Resource\Img-Control\report\hot_badge_50px.png" />
+    <Content Include="Resource\Img-Control\report\hot_badge_80px.png" />
+    <Content Include="Resource\Img-Control\report_100px.png" />
+    <Content Include="Resource\Img-Control\rule_100px.png" />
+    <Content Include="Resource\Img-Control\sell_100px.png" />
+    <Content Include="Resource\Img-Control\shutdown_32px.png" />
+    <Content Include="Resource\Img-Control\shutdown_52px_2.png" />
+    <Content Include="Resource\Img-Control\shutdown_52px_3.png" />
+    <Content Include="Resource\Img-Control\sinchronize_48px_1.png" />
+    <Content Include="Resource\Img-Control\sinchronize_48px.png" />
+    <Content Include="Resource\Img-Control\software-box-100px.png" />
+    <Content Include="Resource\Img-Control\customer_100px.png" />
+    <Content Include="Resource\Img-Control\user_groups_100px.png" />
+    <Content Include="Resource\Img-Control\user_groups_100px_1.png" />
+    <Content Include="Resource\Img-Control\x_mark_32px.png" />
+    <Content Include="Resource\Img-Control\x_mark_32px_1.png" />
+    <Content Include="Resource\Models\apple_logo_PNG19679.png" />
+    <Content Include="Resource\Models\imac-21.5-2.3GHz-1TB-hard-drive.jpg" />
+    <Content Include="Resource\Models\imac-21.5-3.0GHz-1TB-hard-drive.jpg" />
+    <Content Include="Resource\Models\imac-21.5-3.4GHz-1TB-Fusion-Drive.jpg" />
+    <Content Include="Resource\Models\iPhone-X-Features-6.png" />
+    <Content Include="Resource\Models\iphone-x-select-2017.png" />
+    <Content Include="Resource\Models\iphone6s-gold.jpg" />
+    <Content Include="Resource\Models\iphone6s-Rose-Gold.jpg" />
+    <Content Include="Resource\Models\iphone6s-sliver.jpg" />
+    <Content Include="Resource\Models\iphone6s-space-gray.jpg" />
+    <Content Include="Resource\Models\iphone_x_medium.jpg" />
+    <Content Include="Resource\Models\mac-book-13-2.3GHz-128GB-sliver.jpg" />
+    <Content Include="Resource\Models\mac-book-13-2.3GHz-128GB-space-gray.jpg" />
+    <Content Include="Resource\Models\mac-book-13-2.3GHz-256GB-sliver.jpg" />
+    <Content Include="Resource\Models\mac-book-13-2.3GHz-256GB-space-gray.jpg" />
+    <Content Include="Resource\Models\mac-book-13-3.1GHz-256GB-sliver.jpg" />
+    <Content Include="Resource\Models\mac-book-13-3.1GHz-256GB-space-gray.jpg" />
+    <Content Include="Resource\Models\mac-book-15-2.8GHz-256GB-sliver.jpg" />
+    <Content Include="Resource\Models\mac-book-15-2.8GHz-256GB-space-gray.jpg" />
+    <Content Include="Resource\Models\mac-book-15-2.9GHz-512GB-sliver.jpg" />
+    <Content Include="Resource\Models\mac-book-15-2.9GHz-512GB-space-gray.jpg" />
+    <Content Include="Resource\Models\Macbook-PNG-Photos.png" />
+    <Content Include="Resource\Models\two_powerful_lenses_large.png" />
+    <Content Include="Resource\Splash\Splash-1.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
