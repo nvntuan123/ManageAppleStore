@@ -58,7 +58,7 @@ namespace ManageAppleStore_GUI
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblRefresh = new DevExpress.XtraEditors.LabelControl();
-            this.lblQuayLai = new DevExpress.XtraEditors.LabelControl();
+            this.lblBefore = new DevExpress.XtraEditors.LabelControl();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblHienThi = new DevExpress.XtraEditors.LabelControl();
             this.btnEditEmployee = new DevExpress.XtraEditors.SimpleButton();
@@ -203,7 +203,7 @@ namespace ManageAppleStore_GUI
             this.btnSave.AppearanceHovered.Options.UseBackColor = true;
             this.btnSave.AppearanceHovered.Options.UseFont = true;
             this.btnSave.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.ImageOptions.Image")));
+            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
             this.btnSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnSave.Location = new System.Drawing.Point(695, 78);
             this.btnSave.Name = "btnSave";
@@ -439,7 +439,7 @@ namespace ManageAppleStore_GUI
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.panel3.Controls.Add(this.lblRefresh);
-            this.panel3.Controls.Add(this.lblQuayLai);
+            this.panel3.Controls.Add(this.lblBefore);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
@@ -462,24 +462,24 @@ namespace ManageAppleStore_GUI
             this.lblRefresh.TabIndex = 17;
             this.lblRefresh.ToolTip = "Làm mới";
             // 
-            // lblQuayLai
+            // lblBefore
             // 
-            this.lblQuayLai.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblQuayLai.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblQuayLai.Appearance.Options.UseFont = true;
-            this.lblQuayLai.Appearance.Options.UseImage = true;
-            this.lblQuayLai.Appearance.Options.UseImageAlign = true;
-            this.lblQuayLai.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
-            this.lblQuayLai.AppearanceHovered.Options.UseBackColor = true;
-            this.lblQuayLai.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblQuayLai.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.lblQuayLai.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblQuayLai.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.lblQuayLai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("lblQuayLai.ImageOptions.Image")));
-            this.lblQuayLai.Location = new System.Drawing.Point(0, 0);
-            this.lblQuayLai.Name = "lblQuayLai";
-            this.lblQuayLai.Size = new System.Drawing.Size(182, 39);
-            this.lblQuayLai.TabIndex = 0;
+            this.lblBefore.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblBefore.Appearance.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblBefore.Appearance.Options.UseFont = true;
+            this.lblBefore.Appearance.Options.UseImage = true;
+            this.lblBefore.Appearance.Options.UseImageAlign = true;
+            this.lblBefore.AppearanceHovered.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(106)))), ((int)(((byte)(111)))));
+            this.lblBefore.AppearanceHovered.Options.UseBackColor = true;
+            this.lblBefore.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblBefore.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.lblBefore.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblBefore.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.lblBefore.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("lblQuayLai.ImageOptions.Image")));
+            this.lblBefore.Location = new System.Drawing.Point(0, 0);
+            this.lblBefore.Name = "lblBefore";
+            this.lblBefore.Size = new System.Drawing.Size(182, 39);
+            this.lblBefore.TabIndex = 0;
             // 
             // panel4
             // 
@@ -533,7 +533,7 @@ namespace ManageAppleStore_GUI
             this.btnEditEmployee.AppearanceHovered.Options.UseBackColor = true;
             this.btnEditEmployee.AppearanceHovered.Options.UseFont = true;
             this.btnEditEmployee.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnEditEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSuaNV.ImageOptions.Image")));
+            this.btnEditEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEditEmployee.ImageOptions.Image")));
             this.btnEditEmployee.Location = new System.Drawing.Point(0, 449);
             this.btnEditEmployee.Name = "btnEditEmployee";
             this.btnEditEmployee.Size = new System.Drawing.Size(183, 62);
@@ -557,7 +557,7 @@ namespace ManageAppleStore_GUI
             this.btnDeleteEmployee.AppearanceHovered.Options.UseBackColor = true;
             this.btnDeleteEmployee.AppearanceHovered.Options.UseFont = true;
             this.btnDeleteEmployee.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnDeleteEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaNV.ImageOptions.Image")));
+            this.btnDeleteEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteEmployee.ImageOptions.Image")));
             this.btnDeleteEmployee.Location = new System.Drawing.Point(0, 350);
             this.btnDeleteEmployee.Name = "btnDeleteEmployee";
             this.btnDeleteEmployee.Size = new System.Drawing.Size(183, 62);
@@ -583,7 +583,7 @@ namespace ManageAppleStore_GUI
             this.btnAddEmployee.AppearanceHovered.Options.UseFont = true;
             this.btnAddEmployee.AppearanceHovered.Options.UseForeColor = true;
             this.btnAddEmployee.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.btnAddEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThemNV.ImageOptions.Image")));
+            this.btnAddEmployee.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddEmployee.ImageOptions.Image")));
             this.btnAddEmployee.Location = new System.Drawing.Point(0, 250);
             this.btnAddEmployee.Name = "btnAddEmployee";
             this.btnAddEmployee.Size = new System.Drawing.Size(183, 62);
@@ -876,7 +876,7 @@ namespace ManageAppleStore_GUI
         private DevExpress.XtraEditors.SimpleButton btnDeleteEmployee;
         private DevExpress.XtraEditors.SimpleButton btnEditEmployee;
         private DevExpress.XtraEditors.SimpleButton btnSave;
-        private DevExpress.XtraEditors.LabelControl lblQuayLai;
+        private DevExpress.XtraEditors.LabelControl lblBefore;
         private DevExpress.XtraEditors.LabelControl lblHienThi;
         private DevExpress.XtraGrid.GridControl gcEmployeeList;
         private DevExpress.XtraGrid.Views.Grid.GridView gvEmployeeList;
