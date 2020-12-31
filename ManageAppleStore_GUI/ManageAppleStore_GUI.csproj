@@ -63,6 +63,12 @@
     <Compile Include="frmAppInfo.Designer.cs">
       <DependentUpon>frmAppInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCustomerOfType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerOfType.Designer.cs">
+      <DependentUpon>frmCustomerOfType.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,12 @@
     </Compile>
     <Compile Include="frmEmployeeInfo.Designer.cs">
       <DependentUpon>frmEmployeeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeOfType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeOfType.Designer.cs">
+      <DependentUpon>frmEmployeeOfType.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEmployees.cs">
       <SubType>Form</SubType>
@@ -92,6 +104,18 @@
     </Compile>
     <Compile Include="frmIMEIs.Designer.cs">
       <DependentUpon>frmIMEIs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageBill.Designer.cs">
+      <DependentUpon>frmManageBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseOrder.Designer.cs">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -147,11 +171,17 @@
     <EmbeddedResource Include="frmAppInfo.resx">
       <DependentUpon>frmAppInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerOfType.resx">
+      <DependentUpon>frmCustomerOfType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCustomers.resx">
       <DependentUpon>frmCustomers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmployeeInfo.resx">
       <DependentUpon>frmEmployeeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeOfType.resx">
+      <DependentUpon>frmEmployeeOfType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmployees.resx">
       <DependentUpon>frmEmployees.cs</DependentUpon>
@@ -161,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmIMEIs.resx">
       <DependentUpon>frmIMEIs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseOrder.resx">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
