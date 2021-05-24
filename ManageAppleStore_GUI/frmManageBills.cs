@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ManageAppleStore_GUI
 {
-    public partial class frmManageBill : Form
+    public partial class frmManageBills : Form
     {
-        public frmManageBill()
+        public frmManageBills()
         {
             InitializeComponent();
         }

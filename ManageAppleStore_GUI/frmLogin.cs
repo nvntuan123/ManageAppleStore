@@ -19,12 +19,12 @@ namespace ManageAppleStore_GUI
         }
 
         #region Properties
-        public delegate void DGLogin(bool bTrangThai, Employees_DTO nvDangNhap);
+        public delegate void DGLogin(bool bTrangThai, EmployeesDTO nvDangNhap);
         public DGLogin DLogin;
-        public static Employees_DTO EmpLogin = null;
+        public static EmployeesDTO EmpLogin = null;
 
-        BindingList<Employees_DTO> LstEmp = null;
-        public static Employees_DTO EmpSelected = null;
+        BindingList<EmployeesDTO> LstEmp = null;
+        public static EmployeesDTO EmpSelected = null;
 
         Point LastPoint;
         #endregion
@@ -67,7 +67,7 @@ namespace ManageAppleStore_GUI
             {
                 lblError.Visible = false;
 
-                EmpSelected = new Employees_DTO(); // Khởi tạo.
+                EmpSelected = new EmployeesDTO(); // Khởi tạo.
                 bool bCheckTK = false, bCheckMK = false;
 
                 //foreach (Employees_DTO nv in LstEmp)

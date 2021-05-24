@@ -1,7 +1,6 @@
-﻿
-namespace ManageAppleStore_GUI
+﻿namespace ManageAppleStore_GUI
 {
-    partial class frmManageBill
+    partial class frmManageInvoices
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +28,13 @@ namespace ManageAppleStore_GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManageBill));
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmManageInvoices));
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblQuayLai = new DevExpress.XtraEditors.LabelControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gcBillList = new DevExpress.XtraGrid.GridControl();
-            this.gvBillList = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gcInvoiceList = new DevExpress.XtraGrid.GridControl();
+            this.gvInvoiceList = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMaHDB = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNgayBan = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMaNV = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -69,8 +68,8 @@ namespace ManageAppleStore_GUI
             this.dtDate = new DevExpress.XtraEditors.DateEdit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gcBillList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvBillList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gcInvoiceList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvInvoiceList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LookUpEdit_gvColMaNV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LookUpEdit_gvColMaKH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtFromDate.Properties.CalendarTimeProperties)).BeginInit();
@@ -114,7 +113,6 @@ namespace ManageAppleStore_GUI
             this.lblQuayLai.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblQuayLai.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.lblQuayLai.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.lblQuayLai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("lblQuayLai.ImageOptions.Image")));
             this.lblQuayLai.Location = new System.Drawing.Point(0, 0);
             this.lblQuayLai.Margin = new System.Windows.Forms.Padding(4);
             this.lblQuayLai.Name = "lblQuayLai";
@@ -125,81 +123,81 @@ namespace ManageAppleStore_GUI
             // 
             this.gridView1.Name = "gridView1";
             // 
-            // gcBillList
+            // gcInvoiceList
             // 
-            this.gcBillList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
-            this.gcBillList.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gcInvoiceList.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.gcInvoiceList.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             gridLevelNode1.RelationName = "Level1";
-            this.gcBillList.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            this.gcInvoiceList.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
             gridLevelNode1});
-            this.gcBillList.Location = new System.Drawing.Point(190, 222);
-            this.gcBillList.MainView = this.gvBillList;
-            this.gcBillList.Margin = new System.Windows.Forms.Padding(4);
-            this.gcBillList.Name = "gcBillList";
-            this.gcBillList.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.gcInvoiceList.Location = new System.Drawing.Point(190, 222);
+            this.gcInvoiceList.MainView = this.gvInvoiceList;
+            this.gcInvoiceList.Margin = new System.Windows.Forms.Padding(4);
+            this.gcInvoiceList.Name = "gcInvoiceList";
+            this.gcInvoiceList.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.LookUpEdit_gvColMaNV,
             this.LookUpEdit_gvColMaKH});
-            this.gcBillList.Size = new System.Drawing.Size(1062, 503);
-            this.gcBillList.TabIndex = 11;
-            this.gcBillList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvBillList});
+            this.gcInvoiceList.Size = new System.Drawing.Size(1062, 503);
+            this.gcInvoiceList.TabIndex = 11;
+            this.gcInvoiceList.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvInvoiceList});
             // 
-            // gvBillList
+            // gvInvoiceList
             // 
-            this.gvBillList.Appearance.Empty.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvBillList.Appearance.Empty.Options.UseFont = true;
-            this.gvBillList.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.gvBillList.Appearance.EvenRow.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvBillList.Appearance.EvenRow.Options.UseBackColor = true;
-            this.gvBillList.Appearance.EvenRow.Options.UseFont = true;
-            this.gvBillList.Appearance.FooterPanel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gvBillList.Appearance.FooterPanel.Options.UseFont = true;
-            this.gvBillList.Appearance.FooterPanel.Options.UseTextOptions = true;
-            this.gvBillList.Appearance.FooterPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gvBillList.Appearance.GroupFooter.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.gvBillList.Appearance.GroupFooter.Options.UseFont = true;
-            this.gvBillList.Appearance.GroupFooter.Options.UseTextOptions = true;
-            this.gvBillList.Appearance.GroupFooter.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gvBillList.Appearance.HeaderPanel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvBillList.Appearance.HeaderPanel.Options.UseFont = true;
-            this.gvBillList.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.gvBillList.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gvBillList.Appearance.OddRow.BackColor = System.Drawing.Color.White;
-            this.gvBillList.Appearance.OddRow.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvBillList.Appearance.OddRow.Options.UseBackColor = true;
-            this.gvBillList.Appearance.OddRow.Options.UseFont = true;
-            this.gvBillList.Appearance.Row.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvBillList.Appearance.Row.Options.UseFont = true;
-            this.gvBillList.Appearance.Row.Options.UseTextOptions = true;
-            this.gvBillList.Appearance.Row.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gvBillList.Appearance.SelectedRow.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvBillList.Appearance.SelectedRow.Options.UseFont = true;
-            this.gvBillList.Appearance.TopNewRow.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvBillList.Appearance.TopNewRow.Options.UseFont = true;
-            this.gvBillList.Appearance.ViewCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.gvBillList.Appearance.ViewCaption.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gvBillList.Appearance.ViewCaption.Options.UseBackColor = true;
-            this.gvBillList.Appearance.ViewCaption.Options.UseFont = true;
-            this.gvBillList.Appearance.ViewCaption.Options.UseTextOptions = true;
-            this.gvBillList.Appearance.ViewCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gvBillList.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gvInvoiceList.Appearance.Empty.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvInvoiceList.Appearance.Empty.Options.UseFont = true;
+            this.gvInvoiceList.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.gvInvoiceList.Appearance.EvenRow.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvInvoiceList.Appearance.EvenRow.Options.UseBackColor = true;
+            this.gvInvoiceList.Appearance.EvenRow.Options.UseFont = true;
+            this.gvInvoiceList.Appearance.FooterPanel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gvInvoiceList.Appearance.FooterPanel.Options.UseFont = true;
+            this.gvInvoiceList.Appearance.FooterPanel.Options.UseTextOptions = true;
+            this.gvInvoiceList.Appearance.FooterPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gvInvoiceList.Appearance.GroupFooter.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gvInvoiceList.Appearance.GroupFooter.Options.UseFont = true;
+            this.gvInvoiceList.Appearance.GroupFooter.Options.UseTextOptions = true;
+            this.gvInvoiceList.Appearance.GroupFooter.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gvInvoiceList.Appearance.HeaderPanel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvInvoiceList.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gvInvoiceList.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gvInvoiceList.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gvInvoiceList.Appearance.OddRow.BackColor = System.Drawing.Color.White;
+            this.gvInvoiceList.Appearance.OddRow.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvInvoiceList.Appearance.OddRow.Options.UseBackColor = true;
+            this.gvInvoiceList.Appearance.OddRow.Options.UseFont = true;
+            this.gvInvoiceList.Appearance.Row.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvInvoiceList.Appearance.Row.Options.UseFont = true;
+            this.gvInvoiceList.Appearance.Row.Options.UseTextOptions = true;
+            this.gvInvoiceList.Appearance.Row.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gvInvoiceList.Appearance.SelectedRow.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvInvoiceList.Appearance.SelectedRow.Options.UseFont = true;
+            this.gvInvoiceList.Appearance.TopNewRow.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvInvoiceList.Appearance.TopNewRow.Options.UseFont = true;
+            this.gvInvoiceList.Appearance.ViewCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.gvInvoiceList.Appearance.ViewCaption.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gvInvoiceList.Appearance.ViewCaption.Options.UseBackColor = true;
+            this.gvInvoiceList.Appearance.ViewCaption.Options.UseFont = true;
+            this.gvInvoiceList.Appearance.ViewCaption.Options.UseTextOptions = true;
+            this.gvInvoiceList.Appearance.ViewCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gvInvoiceList.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colMaHDB,
             this.colNgayBan,
             this.colMaNV,
             this.colMaKH,
             this.colTongTien});
-            this.gvBillList.GridControl = this.gcBillList;
-            this.gvBillList.Name = "gvBillList";
-            this.gvBillList.NewItemRowText = "Thêm Mới";
-            this.gvBillList.OptionsBehavior.Editable = false;
-            this.gvBillList.OptionsSelection.MultiSelect = true;
-            this.gvBillList.OptionsView.EnableAppearanceEvenRow = true;
-            this.gvBillList.OptionsView.EnableAppearanceOddRow = true;
-            this.gvBillList.OptionsView.ShowAutoFilterRow = true;
-            this.gvBillList.OptionsView.ShowFooter = true;
-            this.gvBillList.OptionsView.ShowGroupPanel = false;
-            this.gvBillList.OptionsView.ShowViewCaption = true;
-            this.gvBillList.ViewCaption = "Danh Sách Hóa Đơn";
+            this.gvInvoiceList.GridControl = this.gcInvoiceList;
+            this.gvInvoiceList.Name = "gvInvoiceList";
+            this.gvInvoiceList.NewItemRowText = "Thêm Mới";
+            this.gvInvoiceList.OptionsBehavior.Editable = false;
+            this.gvInvoiceList.OptionsSelection.MultiSelect = true;
+            this.gvInvoiceList.OptionsView.EnableAppearanceEvenRow = true;
+            this.gvInvoiceList.OptionsView.EnableAppearanceOddRow = true;
+            this.gvInvoiceList.OptionsView.ShowAutoFilterRow = true;
+            this.gvInvoiceList.OptionsView.ShowFooter = true;
+            this.gvInvoiceList.OptionsView.ShowGroupPanel = false;
+            this.gvInvoiceList.OptionsView.ShowViewCaption = true;
+            this.gvInvoiceList.ViewCaption = "Danh Sách Hóa Đơn";
             // 
             // colMaHDB
             // 
@@ -529,7 +527,7 @@ namespace ManageAppleStore_GUI
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(700, 169);
             this.groupControl2.TabIndex = 26;
-            this.groupControl2.Text = "Thông Tin Hóa Đơn Bán";
+            this.groupControl2.Text = "Thông Tin Hóa Đơn Nhập";
             // 
             // txtTotalPrice
             // 
@@ -668,7 +666,7 @@ namespace ManageAppleStore_GUI
             this.dtDate.Size = new System.Drawing.Size(191, 24);
             this.dtDate.TabIndex = 18;
             // 
-            // frmManageBill
+            // frmManageInvoices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -677,18 +675,18 @@ namespace ManageAppleStore_GUI
             this.Controls.Add(this.groupControl2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.groupControl1);
-            this.Controls.Add(this.gcBillList);
+            this.Controls.Add(this.gcInvoiceList);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmManageBill";
+            this.Name = "frmManageInvoices";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmManageBill";
+            this.Text = "frmManageInvoices";
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gcBillList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvBillList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gcInvoiceList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvInvoiceList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LookUpEdit_gvColMaNV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LookUpEdit_gvColMaKH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtFromDate.Properties.CalendarTimeProperties)).EndInit();
@@ -718,8 +716,8 @@ namespace ManageAppleStore_GUI
         private System.Windows.Forms.Panel panel2;
         private DevExpress.XtraEditors.LabelControl lblQuayLai;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.GridControl gcBillList;
-        private DevExpress.XtraGrid.Views.Grid.GridView gvBillList;
+        private DevExpress.XtraGrid.GridControl gcInvoiceList;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvInvoiceList;
         private DevExpress.XtraEditors.DateEdit dtFromDate;
         private DevExpress.XtraEditors.DateEdit dtToDate;
         private DevExpress.XtraGrid.Columns.GridColumn colMaHDB;

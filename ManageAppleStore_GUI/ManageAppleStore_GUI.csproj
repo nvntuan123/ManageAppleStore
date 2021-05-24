@@ -63,6 +63,12 @@
     <Compile Include="frmAppInfo.Designer.cs">
       <DependentUpon>frmAppInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBillDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBillDetails.Designer.cs">
+      <DependentUpon>frmBillDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCustomerOfType.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,11 +111,23 @@
     <Compile Include="frmIMEIs.Designer.cs">
       <DependentUpon>frmIMEIs.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmManageBill.cs">
+    <Compile Include="frmInvoiceDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmManageBill.Designer.cs">
-      <DependentUpon>frmManageBill.cs</DependentUpon>
+    <Compile Include="frmInvoiceDetails.Designer.cs">
+      <DependentUpon>frmInvoiceDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageBills.Designer.cs">
+      <DependentUpon>frmManageBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageInvoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageInvoices.Designer.cs">
+      <DependentUpon>frmManageInvoices.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPurchaseOrder.cs">
       <SubType>Form</SubType>
@@ -191,6 +209,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmIMEIs.resx">
       <DependentUpon>frmIMEIs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageBills.resx">
+      <DependentUpon>frmManageBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageInvoices.resx">
+      <DependentUpon>frmManageInvoices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPurchaseOrder.resx">
       <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
