@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace ManageAppleStore_DTO
 {
-    public class FrmDTO
+    public class FrmsDTO
     {
         private string _StrFrmID;
         private string _StrFrmName;
 
-        public FrmDTO()
+        public FrmsDTO()
         {
             _StrFrmID = string.Empty;
             _StrFrmName = string.Empty;
         }
 
-        public FrmDTO(string strFrmID = null, string strFrmName = null)
+        public FrmsDTO(string strFrmID = null, string strFrmName = null)
         {
             _StrFrmID = strFrmID;
             _StrFrmName = strFrmName;

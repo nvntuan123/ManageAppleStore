@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ManageAppleStore_BUS;
 using ManageAppleStore_DTO;
 
 namespace ManageAppleStore_GUI
@@ -44,73 +45,80 @@ namespace ManageAppleStore_GUI
             lblError.Visible = false;
             txtID.Focus();
 
-            //lstNV = NhanVien_BUS.loadDSNV_BUS();
+            LstEmp = EmployeesBUS.loadListBUS();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtID.Text == string.Empty)
+            if (LstEmp == null)
             {
-                DevExpress.XtraEditors.XtraMessageBox.Show("Bạn chưa nhập tài khoản", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                lblError.Location = new Point(241, 82);
-                lblError.Visible = true;
-                txtID.Focus();
-            }
-            else if (txtPassword.Text == string.Empty)
-            {
-                DevExpress.XtraEditors.XtraMessageBox.Show("Bạn chưa nhập mật khẩu", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                lblError.Location = new Point(241, 138);
-                lblError.Visible = true;
-                txtPassword.Focus();
+                MessageBox.Show("Chưa Có Nhân Viên Nào Trong Danh Sách!");
             }
             else
             {
-                lblError.Visible = false;
+                if (txtID.Text == string.Empty)
+                {
+                    DevExpress.XtraEditors.XtraMessageBox.Show("Bạn chưa nhập tài khoản", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    lblError.Location = new Point(241, 82);
+                    lblError.Visible = true;
+                    txtID.Focus();
+                }
+                else if (txtPassword.Text == string.Empty)
+                {
+                    DevExpress.XtraEditors.XtraMessageBox.Show("Bạn chưa nhập mật khẩu", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    lblError.Location = new Point(241, 138);
+                    lblError.Visible = true;
+                    txtPassword.Focus();
+                }
+                else
+                {
+                    lblError.Visible = false;
 
-                EmpSelected = new EmployeesDTO(); // Khởi tạo.
-                bool bCheckTK = false, bCheckMK = false;
+                    EmpSelected = new EmployeesDTO(); // Khởi tạo.
+                    bool BCheckID = false, BCheckPas = false;
 
-                //foreach (Employees_DTO nv in LstEmp)
-                //{
-                //    if (txtTaiKhoan.Text == nv.strSDT)
-                //    {
-                //        bCheckTK = true;
-                //        if (txtPassword.Text == nv.strMatKhau)
-                //        {
-                //            bCheckMK = true;
-                //        }
-                //    }
+                    foreach (EmployeesDTO Emp in LstEmp)
+                    {
+                        if (txtID.Text == Emp.StrNumberPhone)
+                        {
+                            BCheckID = true;
+                            if (txtPassword.Text == Emp.StrPassword)
+                            {
+                                BCheckPas = true;
+                            }
+                        }
 
-                //    if (bCheckTK && bCheckMK)
-                //    {
-                //        nvSelected = nv;
-                //        nvDangNhap_ToanCuc = nv;
-                //        break;
-                //    }
-                //}
+                        if (BCheckID && BCheckPas)
+                        {
+                            EmpSelected = Emp;
+                            EmpLogin = Emp;
+                            break;
+                        }
+                    }
 
-                //if (bCheckTK && bCheckMK)
-                //{
-                //    if (dangNhap != null)
-                //    {
-                //        dangNhap(true, nvSelected);
-                //        this.Close();
-                //    }
-                //}
-                //else if (!bCheckTK)
-                //{
-                //    DevExpress.XtraEditors.XtraMessageBox.Show("Sai Tài Khoản!", "Thông Báo");
-                //    lblError.Visible = true;
-                //    lblError.Location = new Point(241, 82);
-                //    txtTaiKhoan.Focus();
-                //}
-                //else if (!bCheckMK)
-                //{
-                //    DevExpress.XtraEditors.XtraMessageBox.Show("Sai Mật Khẩu!", "Thông Báo");
-                //    lblError.Visible = true;
-                //    lblError.Location = new Point(241, 138);
-                //    txtPassword.Focus();
-                //}
+                    if (BCheckID && BCheckPas)
+                    {
+                        if (DLogin != null)
+                        {
+                            DLogin(true, EmpSelected);
+                            this.Close();
+                        }
+                    }
+                    else if (!BCheckID)
+                    {
+                        DevExpress.XtraEditors.XtraMessageBox.Show("Sai Tài Khoản!", "Thông Báo");
+                        lblError.Visible = true;
+                        lblError.Location = new Point(241, 82);
+                        txtID.Focus();
+                    }
+                    else if (!BCheckPas)
+                    {
+                        DevExpress.XtraEditors.XtraMessageBox.Show("Sai Mật Khẩu!", "Thông Báo");
+                        lblError.Visible = true;
+                        lblError.Location = new Point(241, 138);
+                        txtPassword.Focus();
+                    }
+                }
             }
         }
 

@@ -8,14 +8,14 @@ namespace ManageAppleStore_DTO
 {
     public class EmployeeOfTypesDTO : TypesDTO
     {
-        EmployeeOfTypesDTO() : base()
+        public EmployeeOfTypesDTO() :  base()
         {
-
+            
         }
 
-        EmployeeOfTypesDTO(string strID, string strName, bool bStatus) : base(strID, strName, bStatus)
+        public EmployeeOfTypesDTO(string strID, string strName, bool bStatus, string str) : base(strID, strName, bStatus)
         {
-
+            
         }
     }
 }

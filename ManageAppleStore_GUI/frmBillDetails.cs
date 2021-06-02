@@ -180,9 +180,9 @@ namespace ManageAppleStore_GUI
         {
             if (gvDSCTHDBan.SelectedRowsCount > 0)
             {
-                _ProductCurrent = (SanPhamBan_DTO)gvDSCTHDBan.GetRow(gvDSCTHDBan.FocusedRowHandle);
-                _LstIMEIList = IMEI_BUS.loadDSIMEIThaoHDB_BUS(_ProductCurrent., _Bill.IBillID);
-                gcDSMaIMEI.DataSource = _LST_DSIMEI;
+                //_ProductCurrent = (SanPhamBan_DTO)gvDSCTHDBan.GetRow(gvDSCTHDBan.FocusedRowHandle);
+                //_LstIMEIList = IMEI_BUS.loadDSIMEIThaoHDB_BUS(_ProductCurrent., _Bill.IBillID);
+                //gcDSMaIMEI.DataSource = _LST_DSIMEI;
             }
         }
         #endregion

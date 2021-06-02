@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ManageAppleStore_BUS;
+using ManageAppleStore_DTO;
 
 namespace ManageAppleStore_GUI
 {
@@ -17,6 +19,56 @@ namespace ManageAppleStore_GUI
         {
             InitializeComponent();
         }
+        #region Properties
+        BindingList<EmployeeOfTypesDTO> LstEmpOfType = null;
+        PermissionsDTO Per = null;
+        private static EmployeesDTO _LoginEmp = null;
+        private bool _BLoginStatus = false;
+        public static EmployeesDTO LoginEmp { get => _LoginEmp; set => _LoginEmp = value; }
+        public bool BLoginStatus { get => _BLoginStatus; set => _BLoginStatus = value; }
+        #endregion
+        #region Methods
+        private void setLoginStatus(bool BStatus, EmployeesDTO Emp)
+        {
+            _BLoginStatus = BStatus;
+            _LoginEmp = Emp;
+
+            if (BStatus)
+            {
+                Util.EndAnimate(panUserAndRole, Util.Effect.Slide, 150, 180);
+                lblFullName.Visible = true;
+                lblFullName.Text = Emp.StrFullName;
+
+                if (LstEmpOfType != null)
+                {
+                    foreach (EmployeeOfTypesDTO employeeOfTypes in LstEmpOfType)
+                    {
+                        if (Emp.StrEmployeeOfTypeID == employeeOfTypes.StrID)
+                        {
+                            lblRole.Text = employeeOfTypes.StrName;
+                            break;
+                        }
+                    }
+                }
+
+                if (panelMenu.Size.Width != 38)
+                {
+                    panUserAndRole.Visible = true;
+                    lblFullName.Visible = true;
+                    lblRole.Visible = true;
+                }
+                lblLogin.Text = "Đăng Xuất";
+                lblLogin.ToolTip = "Đăng Xuất";
+            }
+            else
+            {
+                Util.EndAnimate(panUserAndRole, Util.Effect.Slide, 150, 30);
+                lblLogin.Text = "Đăng Nhập";
+                lblFullName.Text = "";
+                lblRole.Text = "";
+            }
+        }
+        #endregion
         #region Events
         private void frmHome_Load(object sender, EventArgs e)
         {
@@ -24,7 +76,7 @@ namespace ManageAppleStore_GUI
             Util.EndAnimate(this, Util.Effect.Center, 150, 180);
 
             timer1.Start();
-            //lstLoaiNV = LoaiNhanVien_BUS.layDSLoaiNV_BUS();
+            LstEmpOfType = EmployeeOfTypesBUS.loadListBUS();
 
             panUserAndRole.Visible = false;
             //lblHienThi_ChucVu.Visible = false;
@@ -35,16 +87,16 @@ namespace ManageAppleStore_GUI
 
         private void lblLogin_Click(object sender, EventArgs e)
         {
-            //if (!bTrangThaiDangNhap)
-            //{
-            //    frmDangNhap frm = new frmDangNhap();
-            //    frm.dangNhap = setTrangThaiDangNhap;
-            //    frm.ShowDialog();
-            //}
-            //else
-            //{
-            //    setTrangThaiDangNhap(false, null);
-            //}
+            if (!BLoginStatus)
+            {
+                frmLogin frm = new frmLogin();
+                frm.DLogin = setLoginStatus;
+                frm.ShowDialog();
+            }
+            else
+            {
+                setLoginStatus(false, null);
+            }
         }
 
         private void tileItemQLLoaiNV_ItemClick(object sender, TileItemEventArgs e)

@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="EmployeeOfTypesBUS.cs" />
+    <Compile Include="EmployeesBUS.cs" />
+    <Compile Include="FrmsBUS.cs" />
+    <Compile Include="Garena.cs" />
+    <Compile Include="PermissionsBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

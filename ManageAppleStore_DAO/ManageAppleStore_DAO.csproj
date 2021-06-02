@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DataProviderDAO.cs" />
+    <Compile Include="EmployeeOfTypesDAO.cs" />
+    <Compile Include="EmployeesDAO.cs" />
+    <Compile Include="FrmsDAO.cs" />
+    <Compile Include="PermissionsDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -20,11 +20,11 @@ namespace ManageAppleStore_DTO
 
         public PersonDTO()
         {
-            StrID = string.Empty;
-            StrFullName = string.Empty;
-            IIDCard = 0;
-            StrNumberPhone = string.Empty;
-            StrEmail = string.Empty;
+            _StrID = string.Empty;
+            _StrFullName = string.Empty;
+            _IIDCard = 0;
+            _StrNumberPhone = string.Empty;
+            _StrEmail = string.Empty;
             _StrGender = string.Empty;
             _StrAddress = string.Empty;
             _BStatus = false;
@@ -32,15 +32,15 @@ namespace ManageAppleStore_DTO
 
         public PersonDTO(string strID, string strFullName, int iIDCard, string strNumberPhone, string strEmail, DateTime dTBirthDay, string strGender, string strAddress, bool bStatus)
         {
-            StrID = strID;
-            StrFullName = strFullName;
-            IIDCard = iIDCard;
-            StrNumberPhone = strNumberPhone;
-            StrEmail = strEmail;
-            DTBirthDay = dTBirthDay;
-            StrGender = strGender;
-            StrAddress = strAddress;
-            BStatus = bStatus;
+            _StrID = strID;
+            _StrFullName = strFullName;
+            _IIDCard = iIDCard;
+            _StrNumberPhone = strNumberPhone;
+            _StrEmail = strEmail;
+            _DTBirthDay = dTBirthDay;
+            _StrGender = strGender;
+            _StrAddress = strAddress;
+            _BStatus = bStatus;
         }
 
         public string StrID { get => _StrID; set => _StrID = value; }

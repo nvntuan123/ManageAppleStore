@@ -47,8 +47,7 @@
     <Compile Include="CustomersDTO.cs" />
     <Compile Include="EmployeeOfTypesDTO.cs" />
     <Compile Include="EmployeesDTO.cs" />
-    <Compile Include="EmployeesDTOBase.cs" />
-    <Compile Include="FrmDTO.cs" />
+    <Compile Include="FrmsDTO.cs" />
     <Compile Include="IMEIDTO.cs" />
     <Compile Include="InvoiceDetailDTO.cs" />
     <Compile Include="InvoiceDTO.cs" />
